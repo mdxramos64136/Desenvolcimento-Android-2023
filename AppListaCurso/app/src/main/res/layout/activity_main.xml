@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aplicativo Lista Vip Android"
+        android:text="@string/txt_titulo"
+        android:textColor="#8046E8"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,9 +28,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:ems="10"
-        android:hint="Sobrenome"
+        android:hint="@string/txt_hint_edit_sobrenome"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintTop_toBottomOf="@+id/editTextText"
         tools:layout_editor_absoluteX="16dp" />
 
@@ -40,7 +41,6 @@
         android:ems="10"
         android:hint="Nome do Curso Desejado"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintTop_toBottomOf="@+id/editTextText2"
         tools:layout_editor_absoluteX="16dp" />
 
@@ -50,12 +50,10 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:ems="10"
-        android:hint="Telefone"
+        android:hint="@string/txt_hint_edit_telefone"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintTop_toBottomOf="@+id/editTextText3"
         tools:layout_editor_absoluteX="16dp" />
-
 
 
     <EditText
@@ -64,9 +62,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:ems="10"
-        android:hint="Primeiro Nome"
+        android:hint="@string/txt_hint_primeiro_nome"
         android:inputType="text"
-        android:text="Name"
         app:layout_constraintTop_toBottomOf="@+id/textView"
         tools:layout_editor_absoluteX="38dp" />
 
@@ -75,20 +72,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="196dp"
-        android:layout_marginBottom="56dp"
         android:background="@color/corBotoes"
         android:text="Salvar"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintStart_toEndOf="@+id/button2"
         app:layout_constraintTop_toBottomOf="@+id/editTextText4"
-        app:layout_constraintVertical_bias="0.97" />
+        app:layout_constraintVertical_bias="0.575" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginBottom="56dp"
         android:background="@color/corBotoes"
         android:shadowColor="@color/cardview_dark_background"
         android:text="Limpar"
@@ -96,7 +91,7 @@
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText4"
-        app:layout_constraintVertical_bias="0.97" />
+        app:layout_constraintVertical_bias="0.575" />
 
     <Button
         android:id="@+id/button3"
